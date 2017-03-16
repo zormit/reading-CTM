@@ -1,0 +1,498 @@
+I Introduction;1;
+1 Introduction to Programming;3;TRUE
+1.1 A calculator;3;TRUE
+1.2 Variables;4;TRUE
+1.3 Functions;4;TRUE
+1.4 Lists;6;TRUE
+1.5 Functions over lists;9;TRUE
+1.6 Correctness;11;TRUE
+1.7 Complexity;12;TRUE
+1.8 Lazy evaluation;13;TRUE
+1.9 Higher-order programming;15;TRUE
+1.10 Concurrency;16;TRUE
+1.11 Dataflow;17;TRUE
+1.12 State;18;TRUE
+1.13 Objects;19;TRUE
+1.14 Classes;20;TRUE
+1.15 Nondeterminism and time;21;TRUE
+1.16 Atomicity;23;TRUE
+1.17 Where do we go from here;24;TRUE
+1.18 Exercises;24;TRUE
+II General Computation Models;29;TRUE
+2 Declarative Computation Model;31;
+2.1 Defining practical programming languages;33;
+2.1.1 Language syntax;33;
+2.1.2 Language semantics;38;
+2.2 The single-assignment store;44;
+2.2.1 Declarative variables;44;
+2.2.2 Value store;44;
+2.2.3 Value creation;45;
+2.2.4 Variable identifiers;46;
+2.2.5 Value creation with identifiers;47;
+2.2.6 Partial values;47;
+2.2.7 Variable-variable binding;48;
+2.2.8 Dataflow variables;49;
+2.3 Kernel language;50;
+2.3.1 Syntax;50;
+2.3.2 Values and types;51;
+2.3.3 Basic types;53;
+2.3.4 Records and procedures;54;
+2.3.5 Basic operations;56;
+2.4 Kernel language semantics;57;
+2.4.1 Basic concepts;57;
+2.4.2 The abstract machine;61;
+2.4.3 Non-suspendable statements;64;
+2.4.4 Suspendable statements;67;
+2.4.5 Basic concepts revisited;69;
+2.4.6 Last call optimization;74;
+2.4.7 Active memory and memory management;75;
+2.5 From kernel language to practical language;80;
+2.5.1 Syntactic conveniences;80;
+2.5.2 Functions (the fun statement);85;
+2.5.3 Interactive interface (the declare statement);88;
+2.6 Exceptions;91;
+2.6.1 Motivation and basic concepts;91;
+2.6.2 The declarative model with exceptions;93;
+2.6.3 Full syntax;95;
+2.6.4 System exceptions;97;
+2.7 Advanced topics;98;
+2.7.1 Functional programming languages;98;
+2.7.2 Unification and entailment;100;
+2.7.3 Dynamic and static typing;106;
+2.8 Exercises;108;
+3 Declarative Programming Techniques;113;
+3.1 What is declarativeness?;117;TRUE
+3.1.1 A classification of declarative programming;117;TRUE
+3.1.2 Specification languages;119;TRUE
+3.1.3 Implementing components in the declarative model;119;TRUE
+3.2 Iterative computation;120;TRUE
+3.2.1 A general schema;120;TRUE
+3.2.2 Iteration with numbers;122;TRUE
+3.2.3 Using local procedures;122;TRUE
+3.2.4 From general schema to control abstraction;125;TRUE
+3.3 Recursive computation;126;TRUE
+3.3.1 Growing stack size;127;TRUE
+3.3.2 Substitution-based abstract machine;128;TRUE
+3.3.3 Converting a recursive to an iterative computation;129;TRUE
+3.4 Programming with recursion;130;TRUE
+3.4.1 Type notation;131;TRUE
+3.4.2 Programming with lists;132;TRUE
+3.4.3 Accumulators;142;TRUE
+3.4.4 Difference lists;144;TRUE
+3.4.5 Queues;149;TRUE
+3.4.6 Trees;153;TRUE
+3.4.7 Drawing trees;161;TRUE
+3.4.8 Parsing;163;TRUE
+3.5 Time and space efficiency;169;TRUE
+3.5.1 Execution time;169;TRUE
+3.5.2 Memory usage;175;TRUE
+3.5.3 Amortized complexity;177;TRUE
+3.5.4 Reflections on performance;178;TRUE
+3.6 Higher-order programming;180;TRUE
+3.6.1 Basic operations;180;TRUE
+3.6.2 Loop abstractions;186;TRUE
+3.6.3 Linguistic support for loops;190;TRUE
+3.6.4 Data-driven techniques;193;TRUE
+3.6.5 Explicit lazy evaluation;196;TRUE
+3.6.6 Currying;196;TRUE
+3.7 Abstract data types;197;TRUE
+3.7.1 A declarative stack;198;TRUE
+3.7.2 A declarative dictionary;199;TRUE
+3.7.3 A word frequency application;201;TRUE
+3.7.4 Secure abstract data types;204;TRUE
+3.7.5 The declarative model with secure types;205;TRUE
+3.7.6 A secure declarative dictionary;210;TRUE
+3.7.7 Capabilities and security;210;TRUE
+3.8 Nondeclarative needs;213;TRUE
+3.8.1 Text input/output with a file;213;TRUE
+3.8.2 Text input/output with a graphical user interface;216;TRUE
+3.8.3 Stateless data I/O with files;219;TRUE
+3.9 Program design in the small;221;TRUE
+3.9.1 Design methodology;221;TRUE
+3.9.2 Example of program design;222;TRUE
+3.9.3 Software components;223;TRUE
+3.9.4 Example of a standalone program;228;TRUE
+3.10 Exercises;233;TRUE
+4 Declarative Concurrency;237;TRUE
+4.1 The data-driven concurrent model;239;TRUE
+4.1.1 Basic concepts;241;TRUE
+4.1.2 Semantics of threads;243;TRUE
+4.1.3 Example execution;246;TRUE
+4.1.4 What is declarative concurrency?;247;TRUE
+4.2 Basic thread programming techniques;251;TRUE
+4.2.1 Creating threads;251;TRUE
+4.2.2 Threads and the browser;251;TRUE
+4.2.3 Dataflow computation with threads;252;TRUE
+4.2.4 Thread scheduling;256;TRUE
+4.2.5 Cooperative and competitive concurrency;259;TRUE
+4.2.6 Thread operations;260;TRUE
+4.3 Streams;261;TRUE
+4.3.1 Basic producer/consumer;261;TRUE
+4.3.2 Transducers and pipelines;263;TRUE
+4.3.3 Managing resources and improving throughput;265;TRUE
+4.3.4 Stream objects;270;TRUE
+4.3.5 Digital logic simulation;271;TRUE
+4.4 Using the declarative concurrent model directly;277;TRUE
+4.4.1 Order-determining concurrency;277;TRUE
+4.4.2 Coroutines;279;TRUE
+4.4.3 Concurrent composition;281;TRUE
+4.5 Lazy execution;283;TRUE
+4.5.1 The demand-driven concurrent model;286;TRUE
+4.5.2 Declarative computation models;290;TRUE
+4.5.3 Lazy streams;293;TRUE
+4.5.4 Bounded buffer;295;TRUE
+4.5.5 Reading a file lazily;297;TRUE
+4.5.6 The Hamming problem;298;TRUE
+4.5.7 Lazy list operations;299;TRUE
+4.5.8 Persistent queues and algorithm design;303;TRUE
+4.5.9 List comprehensions;307;TRUE
+4.6 Soft real-time programming;309;TRUE
+4.6.1 Basic operations;309;TRUE
+4.6.2 Ticking;311;TRUE
+4.7 Limitations and extensions of declarative programming;314;TRUE
+4.7.1 Efficiency;314;TRUE
+4.7.2 Modularity;315;TRUE
+4.7.3 Nondeterminism;319;TRUE
+4.7.4 The real world;322;TRUE
+4.7.5 Picking the right model;323;TRUE
+4.7.6 Extended models;323;TRUE
+4.7.7 Using different models together;325;TRUE
+4.8 The Haskell language;327;TRUE
+4.8.1 Computation model;328;TRUE
+4.8.2 Lazy evaluation;328;TRUE
+4.8.3 Currying;329;TRUE
+4.8.4 Polymorphic types;330;TRUE
+4.8.5 Type classes;331;TRUE
+4.9 Advanced topics;332;TRUE
+4.9.1 The declarative concurrent model with exceptions;332;TRUE
+4.9.2 More on lazy execution;334;TRUE
+4.9.3 Dataflow variables as communication channels;337;TRUE
+4.9.4 More on synchronization;339;TRUE
+4.9.5 Usefulness of dataflow variables;340;TRUE
+4.10 Historical notes;343;TRUE
+4.11 Exercises;344;TRUE
+5 Message-Passing Concurrency;353;TRUE
+5.1 The message-passing concurrent model;354;TRUE
+5.1.1 Ports;354;TRUE
+5.1.2 Semantics of ports;355;TRUE
+5.2 Port objects;357;TRUE
+5.2.1 The NewPortObject abstraction;358;TRUE
+5.2.2 An example;359;TRUE
+5.2.3 Reasoning with port objects;360;TRUE
+5.3 Simple message protocols;361;TRUE
+5.3.1 RMI (Remote Method Invocation);361;TRUE
+5.3.2 Asynchronous RMI;364;TRUE
+5.3.3 RMI with callback (using thread);364;TRUE
+5.3.4 RMI with callback (using record continuation);366;TRUE
+5.3.5 RMI with callback (using procedure continuation);367;TRUE
+5.3.6 Error reporting;367;TRUE
+5.3.7 Asynchronous RMI with callback;368;TRUE
+5.3.8 Double callbacks;369;TRUE
+5.4 Program design for concurrency;370;TRUE
+5.4.1 Programming with concurrent components;370;TRUE
+5.4.2 Design methodology;372;TRUE
+5.4.3 List operations as concurrency patterns;373;TRUE
+5.4.4 Lift control system;374;TRUE
+5.4.5 Improvements to the lift control system;383;TRUE
+5.5 Using the message-passing concurrent model directly;385;TRUE
+5.5.1 Port objects that share one thread;385;TRUE
+5.5.2 A concurrent queue with ports;387;TRUE
+5.5.3 A thread abstraction with termination detection;390;TRUE
+5.5.4 Eliminating sequential dependencies;393;TRUE
+5.6 The Erlang language;394;TRUE
+5.6.1 Computation model;394;TRUE
+5.6.2 Introduction to Erlang programming;395;TRUE
+5.6.3 The receive operation;398;TRUE
+5.7 Advanced topics;402;TRUE
+5.7.1 The nondeterministic concurrent model;402;TRUE
+5.8 Exercises;407;TRUE
+6 Explicit State;413;TRUE
+6.1 What is state?;416;TRUE
+6.1.1 Implicit (declarative) state;416;TRUE
+6.1.2 Explicit state;417;TRUE
+6.2 State and system building;418;TRUE
+6.2.1 System properties;419;TRUE
+6.2.2 Component-based programming;420;TRUE
+6.2.3 Object-oriented programming;421;TRUE
+6.3 The declarative model with explicit state;421;TRUE
+6.3.1 Cells;422;TRUE
+6.3.2 Semantics of cells;424;TRUE
+6.3.3 Relation to declarative programming;425;TRUE
+6.3.4 Sharing and equality;426;TRUE
+6.4 Abstract data types;427;TRUE
+6.4.1 Eight ways to organize ADTs;427;TRUE
+6.4.2 Variations on a stack;429;TRUE
+6.4.3 Revocable capabilities;433;TRUE
+6.4.4 Parameter passing;434;TRUE
+6.5 Stateful collections;438;TRUE
+6.5.1 Indexed collections;439;TRUE
+6.5.2 Choosing an indexed collection;441;TRUE
+6.5.3 Other collections;442;TRUE
+6.6 Reasoning with state;444;TRUE
+6.6.1 Invariant assertions;444;TRUE
+6.6.2 An example;445;TRUE
+6.6.3 Assertions;448;TRUE
+6.6.4 Proof rules;449;TRUE
+6.6.5 Normal termination;452;TRUE
+6.7 Program design in the large;453;TRUE
+6.7.1 Design methodology;454;TRUE
+6.7.2 Hierarchical system structure;456;TRUE
+6.7.3 Maintainability;461;TRUE
+6.7.4 Future developments;464;TRUE
+6.7.5 Further reading;466;TRUE
+6.8 Case studies;467;TRUE
+6.8.1 Transitive closure;467;TRUE
+6.8.2 Word frequencies (with stateful dictionary);475;TRUE
+6.8.3 Generating random numbers;476;TRUE
+6.8.4 “Word of Mouth” simulation;481;TRUE
+6.9 Advanced topics;484;TRUE
+6.9.1 Limitations of stateful programming;484;TRUE
+6.9.2 Memory management and external references;485;TRUE
+6.10 Exercises;487;TRUE
+7 Object-Oriented Programming;493;TRUE
+7.1 Motivations;495;TRUE
+7.1.1 Inheritance;495;TRUE
+7.1.2 Encapsulated state and inheritance;497;TRUE
+7.1.3 Objects and classes;497;TRUE
+7.2 Classes as complete ADTs;498;TRUE
+7.2.1 An example;499;TRUE
+7.2.2 Semantics of the example;500;TRUE
+7.2.3 Defining classes;501;TRUE
+7.2.4 Initializing attributes;503;TRUE
+7.2.5 First-class messages;504;TRUE
+7.2.6 First-class attributes;507;TRUE
+7.2.7 Programming techniques;507;TRUE
+7.3 Classes as incremental ADTs;507;TRUE
+7.3.1 Inheritance;508;TRUE
+7.3.2 Static and dynamic binding;511;TRUE
+7.3.3 Controlling encapsulation;512;TRUE
+7.3.4 Forwarding and delegation;517;TRUE
+7.3.5 Reflection;522;TRUE
+7.4 Programming with inheritance;524;TRUE
+7.4.1 The correct use of inheritance;524;TRUE
+7.4.2 Constructing a hierarchy by following the type;528;TRUE
+7.4.3 Generic classes;531;TRUE
+7.4.4 Multiple inheritance;533;TRUE
+7.4.5 Rules of thumb for multiple inheritance;539;TRUE
+7.4.6 The purpose of class diagrams;539;TRUE
+7.4.7 Design patterns;540;TRUE
+7.5 Relation to other computation models;543;TRUE
+7.5.1 Object-based and component-based programming;543;TRUE
+7.5.2 Higher-order programming;544;TRUE
+7.5.3 Functional decomposition versus type decomposition;547;TRUE
+7.5.4 Should everything be an object?;548;TRUE
+7.6 Implementing the object system;552;TRUE
+7.6.1 Abstraction diagram;552;TRUE
+7.6.2 Implementing classes;554;TRUE
+7.6.3 Implementing objects;555;TRUE
+7.6.4 Implementing inheritance;556;TRUE
+7.7 The Java language (sequential part);556;TRUE
+7.7.1 Computation model;557;TRUE
+7.7.2 Introduction to Java programming;558;TRUE
+7.8 Active objects;563;TRUE
+7.8.1 An example;564;TRUE
+7.8.2 The NewActive abstraction;564;TRUE
+7.8.3 The Flavius Josephus problem;565;TRUE
+7.8.4 Other active object abstractions;568;TRUE
+7.8.5 Event manager with active objects;569;TRUE
+7.9 Exercises;574;TRUE
+8 Shared-State Concurrency;577;TRUE
+8.1 The shared-state concurrent model;581;TRUE
+8.2 Programming with concurrency;581;TRUE
+8.2.1 Overview of the different approaches;581;TRUE
+8.2.2 Using the shared-state model directly;585;TRUE
+8.2.3 Programming with atomic actions;588;TRUE
+8.2.4 Further reading;589;TRUE
+8.3 Locks;590;TRUE
+8.3.1 Building stateful concurrent ADTs;592;TRUE
+8.3.2 Tuple spaces (“Linda”);594;TRUE
+8.3.3 Implementing locks;599;TRUE
+8.4 Monitors;600;TRUE
+8.4.1 Bounded buffer;602;TRUE
+8.4.2 Programming with monitors;605;TRUE
+8.4.3 Implementing monitors;605;TRUE
+8.4.4 Another semantics for monitors;607;TRUE
+8.5 Transactions;608;TRUE
+8.5.1 Concurrency control;610;TRUE
+8.5.2 A simple transaction manager;613;TRUE
+8.5.3 Transactions on cells;616;TRUE
+8.5.4 Implementing transactions on cells;619;TRUE
+8.5.5 More on transactions;623;TRUE
+8.6 The Java language (concurrent part);625;TRUE
+8.6.1 Locks 626;626;TRUE
+8.6.2 Monitors 626;626;TRUE
+8.7 Exercises;626;TRUE
+9 Relational Programming;633;TRUE
+9.1 The relational computation model;635;TRUE
+9.1.1 The choice and fail statements;635;TRUE
+9.1.2 Search tree;636;TRUE
+9.1.3 Encapsulated search;637;TRUE
+9.1.4 The Solve function;638;TRUE
+9.2 Further examples;639;TRUE
+9.2.1 Numeric examples;639;TRUE
+9.2.2 Puzzles and the n-queens problem;641;TRUE
+9.3 Relation to logic programming;644;TRUE
+9.3.1 Logic and logic programming;644;TRUE
+9.3.2 Operational and logical semantics;647;TRUE
+9.3.3 Nondeterministic logic programming;650;TRUE
+9.3.4 Relation to pure Prolog;652;TRUE
+9.3.5 Logic programming in other models;653;TRUE
+9.4 Natural language parsing;654;TRUE
+9.4.1 A simple grammar;655;TRUE
+9.4.2 Parsing with the grammar;656;TRUE
+9.4.3 Generating a parse tree;656;TRUE
+9.4.4 Generating quantifiers;657;TRUE
+9.4.5 Running the parser;660;TRUE
+9.4.6 Running the parser “backwards”;660;TRUE
+9.4.7 Unification grammars;661;TRUE
+9.5 A grammar interpreter;662;TRUE
+9.5.1 A simple grammar;663;TRUE
+9.5.2 Encoding the grammar;663;TRUE
+9.5.3 Running the grammar interpreter;664;TRUE
+9.5.4 Implementing the grammar interpreter;665;TRUE
+9.6 Databases;667;TRUE
+9.6.1 Defining a relation;668;TRUE
+9.6.2 Calculating with relations;669;TRUE
+9.6.3 Implementing relations;671;TRUE
+9.7 The Prolog language;673;TRUE
+9.7.1 Computation model;674;TRUE
+9.7.2 Introduction to Prolog programming;676;TRUE
+9.7.3 Translating Prolog into a relational program;681;TRUE
+9.8 Exercises;684;TRUE
+III Specialized Computation Models;687;TRUE
+10 Graphical User Interface Programming;689;TRUE
+10.1 Basic concepts;691;TRUE
+10.2 Using the declarative/procedural approach;692;TRUE
+10.2.1 Basic user interface elements;693;TRUE
+10.2.2 Building the graphical user interface;694;TRUE
+10.2.3 Declarative geometry;696;TRUE
+10.2.4 Declarative resize behavior;697;TRUE
+10.2.5 Dynamic behavior of widgets;698;TRUE
+10.3 Case studies;699;TRUE
+10.3.1 A simple progress monitor;699;TRUE
+10.3.2 A simple calendar widget;700;TRUE
+10.3.3 Automatic generation of a user interface;703;TRUE
+10.3.4 A context-sensitive clock;707;TRUE
+10.4 Implementing the GUI tool;712;TRUE
+10.5 Exercises;712;TRUE
+11 Distributed Programming;713;TRUE
+11.1 Taxonomy of distributed systems;716;TRUE
+11.2 The distribution model;718;TRUE
+11.3 Distribution of declarative data;720;TRUE
+11.3.1 Open distribution and global naming;720;TRUE
+11.3.2 Sharing declarative data;722;TRUE
+11.3.3 Ticket distribution;723;TRUE
+11.3.4 Stream communication;725;TRUE
+11.4 Distribution of state;726;TRUE
+11.4.1 Simple state sharing;726;TRUE
+11.4.2 Distributed lexical scoping;728;TRUE
+11.5 Network awareness;729;TRUE
+11.6 Common distributed programming patterns;730;TRUE
+11.6.1 Stationary and mobile objects;730;TRUE
+11.6.2 Asynchronous objects and dataflow;732;TRUE
+11.6.3 Servers;734;TRUE
+11.6.4 Closed distribution;737;TRUE
+11.7 Distribution protocols;738;TRUE
+11.7.1 Language entities;738;TRUE
+11.7.2 Mobile state protocol;740;TRUE
+11.7.3 Distributed binding protocol;742;TRUE
+11.7.4 Memory management;743;TRUE
+11.8 Partial failure;744;TRUE
+11.8.1 Fault model;745;TRUE
+11.8.2 Simple cases of failure handling;747;TRUE
+11.8.3 A resilient server;748;TRUE
+11.8.4 Active fault tolerance;749;TRUE
+11.9 Security;749;TRUE
+11.10 Building applications;751;TRUE
+11.10.1 Centralized first, distributed later;751;TRUE
+11.10.2 Handling partial failure;751;TRUE
+11.10.3 Distributed components;752;TRUE
+11.11 Exercises;752;TRUE
+12 Constraint Programming;755;TRUE
+12.1 Propagate and search;756;TRUE
+12.1.1 Basic ideas;756;TRUE
+12.1.2 Calculating with partial information;757;TRUE
+12.1.3 An example;758;TRUE
+12.1.4 Executing the example;760;TRUE
+12.1.5 Summary;761;TRUE
+12.2 Programming techniques;761;TRUE
+12.2.1 A cryptarithmetic problem;761;TRUE
+12.2.2 Palindrome products revisited;763;TRUE
+12.3 The constraint-based computation model;764;TRUE
+12.3.1 Basic constraints and propagators;766;TRUE
+12.4 Computation spaces;766;TRUE
+12.4.1 Programming search with computation spaces;767;TRUE
+12.4.2 Definition;767;TRUE
+12.5 Implementing the relational computation model;777;TRUE
+12.5.1 The choice statement;778;TRUE
+12.5.2 Implementing the Solve function;778;TRUE
+12.6 Exercises;778;TRUE
+IV Semantics;781;TRUE
+13 Language Semantics;783;TRUE
+13.1 The shared-state concurrent model;784;TRUE
+13.1.1 The store;785;TRUE
+13.1.2 The single-assignment (constraint) store;785;TRUE
+13.1.3 Abstract syntax;786;TRUE
+13.1.4 Structural rules;787;TRUE
+13.1.5 Sequential and concurrent execution;789;TRUE
+13.1.6 Comparison with the abstract machine semantics;789;TRUE
+13.1.7 Variable introduction;790;TRUE
+13.1.8 Imposing equality (tell);791;TRUE
+13.1.9 Conditional statements (ask);793;TRUE
+13.1.10 Names;795;TRUE
+13.1.11 Procedural abstraction;795;TRUE
+13.1.12 Explicit state;797;TRUE
+13.1.13 By-need triggers;798;TRUE
+13.1.14 Read-only variables;800;TRUE
+13.1.15 Exception handling;801;TRUE
+13.1.16 Failed values;804;TRUE
+13.1.17 Variable substitution;805;TRUE
+13.2 Declarative concurrency;806;TRUE
+13.3 Eight computation models;808;TRUE
+13.4 Semantics of common abstractions;809;TRUE
+13.5 Historical notes;810;TRUE
+13.6 Exercises;811;TRUE
+V Appendix;815;TRUE
+A Mozart System Development Environment;817;TRUE
+A.1 Interactive interface;817;TRUE
+A.1.1 Interface commands;817;TRUE
+A.1.2 Using functors interactively;818;TRUE
+A.2 Batch interface;819;TRUE
+B Basic Data Types;821;TRUE
+B.1 Numbers (integers, floats, and characters);821;TRUE
+B.1.1 Operations on numbers;823;TRUE
+B.1.2 Operations on characters;824;TRUE
+B.2 Literals (atoms and names);825;TRUE
+B.2.1 Operations on atoms;826;TRUE
+B.3 Records and tuples;826;TRUE
+B.3.1 Tuples;827;TRUE
+B.3.2 Operations on records;828;TRUE
+B.3.3 Operations on tuples;829;TRUE
+B.4 Chunks (limited records);829;TRUE
+B.5 Lists;830;TRUE
+B.5.1 Operations on lists;831;TRUE
+B.6 Strings;832;TRUE
+B.7 Virtual strings;833;TRUE
+C Language Syntax;835;TRUE
+C.1 Interactive statements;836;TRUE
+C.2 Statements and expressions;836;TRUE
+C.3 Nonterminals for statements and expressions;838;TRUE
+C.4 Operators;838;TRUE
+C.4.1 Ternary operator;841;TRUE
+C.5 Keywords;841;TRUE
+C.6 Lexical syntax;843;TRUE
+C.6.1 Tokens 843;843;TRUE
+C.6.2 Blank space and comments 843;843;TRUE
+D General Computation Model;845;TRUE
+D.1 Creative extension principle;846;TRUE
+D.2 Kernel language;847;TRUE
+D.3 Concepts;848;TRUE
+D.3.1 Declarative models;848;TRUE
+D.3.2 Security;849;TRUE
+D.3.3 Exceptions;849;TRUE
+D.3.4 Explicit state;850;TRUE
+D.4 Different forms of state;850;TRUE
+D.5 Other concepts;851;TRUE
+D.5.1 What’s next?;851;TRUE
+D.5.2 Domain-specific concepts;851;TRUE
+D.6 Layered language design;852;TRUE

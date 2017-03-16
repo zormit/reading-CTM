@@ -1,0 +1,1425 @@
+\documentclass[numbers=noendperiod,twoside=true]{scrbook}
+\usepackage{pdfpages}
+\usepackage[hidelinks]{hyperref}
+\begin{document}
+
+% Activate roman numbering (e. g. xii)
+\pagenumbering{roman}
+
+% Start with page 1 (I)
+\setcounter{page}{1}
+
+\includepdf[pages={1-2}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{Contents}
+\tableofcontents
+\includepdf[pages={16-43}]{ctm.pdf}
+
+% Activate arabic numbering (e. g. 12)
+\pagenumbering{arabic}
+
+% Start with page 1
+\setcounter{page}{1}
+
+\clearpage\phantomsection
+\addcontentsline{toc}{part}{\protect\numberline{I} Introduction}
+\includepdf[pages={44-45}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{1} Introduction to Programming}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.1} A calculator}
+\includepdf[pages={46-46}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.2} Variables}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.3} Functions}
+\includepdf[pages={47-48}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.4} Lists}
+\includepdf[pages={49-51}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.5} Functions over lists}
+\includepdf[pages={52-53}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.6} Correctness}
+\includepdf[pages={54-54}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.7} Complexity}
+\includepdf[pages={55-55}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.8} Lazy evaluation}
+\includepdf[pages={56-57}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.9} Higher-order programming}
+\includepdf[pages={58-58}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.10} Concurrency}
+\includepdf[pages={59-59}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.11} Dataflow}
+\includepdf[pages={60-60}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.12} State}
+\includepdf[pages={61-61}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.13} Objects}
+\includepdf[pages={62-62}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.14} Classes}
+\includepdf[pages={63-63}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.15} Nondeterminism and time}
+\includepdf[pages={64-65}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.16} Atomicity}
+\includepdf[pages={66-66}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.17} Where do we go from here}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.18} Exercises}
+\includepdf[pages={67-71}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{part}{\protect\numberline{II} General Computation Models}
+\includepdf[pages={72-73}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{2} Declarative Computation Model}
+\includepdf[pages={74-75}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{2.1} Defining practical programming languages}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.1.1} Language syntax}
+\includepdf[pages={76-80}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.1.2} Language semantics}
+\includepdf[pages={81-86}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{2.2} The single-assignment store}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.2.1} Declarative variables}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.2.2} Value store}
+\includepdf[pages={87-87}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.2.3} Value creation}
+\includepdf[pages={88-88}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.2.4} Variable identifiers}
+\includepdf[pages={89-89}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.2.5} Value creation with identifiers}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.2.6} Partial values}
+\includepdf[pages={90-90}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.2.7} Variable-variable binding}
+\includepdf[pages={91-91}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.2.8} Dataflow variables}
+\includepdf[pages={92-92}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{2.3} Kernel language}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.3.1} Syntax}
+\includepdf[pages={93-93}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.3.2} Values and types}
+\includepdf[pages={94-95}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.3.3} Basic types}
+\includepdf[pages={96-96}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.3.4} Records and procedures}
+\includepdf[pages={97-98}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.3.5} Basic operations}
+\includepdf[pages={99-99}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{2.4} Kernel language semantics}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.4.1} Basic concepts}
+\includepdf[pages={100-103}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.4.2} The abstract machine}
+\includepdf[pages={104-106}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.4.3} Non-suspendable statements}
+\includepdf[pages={107-109}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.4.4} Suspendable statements}
+\includepdf[pages={110-111}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.4.5} Basic concepts revisited}
+\includepdf[pages={112-116}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.4.6} Last call optimization}
+\includepdf[pages={117-117}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.4.7} Active memory and memory management}
+\includepdf[pages={118-122}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{2.5} From kernel language to practical language}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.5.1} Syntactic conveniences}
+\includepdf[pages={123-127}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.5.2} Functions (the fun statement)}
+\includepdf[pages={128-130}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.5.3} Interactive interface (the declare statement)}
+\includepdf[pages={131-133}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{2.6} Exceptions}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.6.1} Motivation and basic concepts}
+\includepdf[pages={134-135}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.6.2} The declarative model with exceptions}
+\includepdf[pages={136-137}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.6.3} Full syntax}
+\includepdf[pages={138-139}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.6.4} System exceptions}
+\includepdf[pages={140-140}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{2.7} Advanced topics}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.7.1} Functional programming languages}
+\includepdf[pages={141-142}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.7.2} Unification and entailment}
+\includepdf[pages={143-148}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{2.7.3} Dynamic and static typing}
+\includepdf[pages={149-150}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{2.8} Exercises}
+\includepdf[pages={151-155}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{3} Declarative Programming Techniques}
+\includepdf[pages={156-159}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{3.1} What is declarativeness?}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.1.1} A classification of declarative programming}
+\includepdf[pages={160-161}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.1.2} Specification languages}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.1.3} Implementing components in the declarative model}
+\includepdf[pages={162-162}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{3.2} Iterative computation}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.2.1} A general schema}
+\includepdf[pages={163-164}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.2.2} Iteration with numbers}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.2.3} Using local procedures}
+\includepdf[pages={165-167}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.2.4} From general schema to control abstraction}
+\includepdf[pages={168-168}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{3.3} Recursive computation}
+\includepdf[pages={169-169}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.3.1} Growing stack size}
+\includepdf[pages={170-170}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.3.2} Substitution-based abstract machine}
+\includepdf[pages={171-171}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.3.3} Converting a recursive to an iterative computation}
+\includepdf[pages={172-172}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{3.4} Programming with recursion}
+\includepdf[pages={173-173}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.4.1} Type notation}
+\includepdf[pages={174-174}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.4.2} Programming with lists}
+\includepdf[pages={175-184}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.4.3} Accumulators}
+\includepdf[pages={185-186}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.4.4} Difference lists}
+\includepdf[pages={187-191}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.4.5} Queues}
+\includepdf[pages={192-195}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.4.6} Trees}
+\includepdf[pages={196-203}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.4.7} Drawing trees}
+\includepdf[pages={204-205}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.4.8} Parsing}
+\includepdf[pages={206-211}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{3.5} Time and space efficiency}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.5.1} Execution time}
+\includepdf[pages={212-217}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.5.2} Memory usage}
+\includepdf[pages={218-219}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.5.3} Amortized complexity}
+\includepdf[pages={220-220}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.5.4} Reflections on performance}
+\includepdf[pages={221-222}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{3.6} Higher-order programming}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.6.1} Basic operations}
+\includepdf[pages={223-228}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.6.2} Loop abstractions}
+\includepdf[pages={229-232}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.6.3} Linguistic support for loops}
+\includepdf[pages={233-235}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.6.4} Data-driven techniques}
+\includepdf[pages={236-238}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.6.5} Explicit lazy evaluation}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.6.6} Currying}
+\includepdf[pages={239-239}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{3.7} Abstract data types}
+\includepdf[pages={240-240}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.7.1} A declarative stack}
+\includepdf[pages={241-241}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.7.2} A declarative dictionary}
+\includepdf[pages={242-243}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.7.3} A word frequency application}
+\includepdf[pages={244-246}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.7.4} Secure abstract data types}
+\includepdf[pages={247-247}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.7.5} The declarative model with secure types}
+\includepdf[pages={248-252}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.7.6} A secure declarative dictionary}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.7.7} Capabilities and security}
+\includepdf[pages={253-255}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{3.8} Nondeclarative needs}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.8.1} Text input/output with a file}
+\includepdf[pages={256-258}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.8.2} Text input/output with a graphical user interface}
+\includepdf[pages={259-261}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.8.3} Stateless data I/O with files}
+\includepdf[pages={262-263}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{3.9} Program design in the small}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.9.1} Design methodology}
+\includepdf[pages={264-264}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.9.2} Example of program design}
+\includepdf[pages={265-265}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.9.3} Software components}
+\includepdf[pages={266-270}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{3.9.4} Example of a standalone program}
+\includepdf[pages={271-275}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{3.10} Exercises}
+\includepdf[pages={276-279}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{4} Declarative Concurrency}
+\includepdf[pages={280-281}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{4.1} The data-driven concurrent model}
+\includepdf[pages={282-283}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.1.1} Basic concepts}
+\includepdf[pages={284-285}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.1.2} Semantics of threads}
+\includepdf[pages={286-288}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.1.3} Example execution}
+\includepdf[pages={289-289}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.1.4} What is declarative concurrency?}
+\includepdf[pages={290-293}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{4.2} Basic thread programming techniques}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.2.1} Creating threads}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.2.2} Threads and the browser}
+\includepdf[pages={294-294}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.2.3} Dataflow computation with threads}
+\includepdf[pages={295-298}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.2.4} Thread scheduling}
+\includepdf[pages={299-301}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.2.5} Cooperative and competitive concurrency}
+\includepdf[pages={302-302}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.2.6} Thread operations}
+\includepdf[pages={303-303}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{4.3} Streams}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.3.1} Basic producer/consumer}
+\includepdf[pages={304-305}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.3.2} Transducers and pipelines}
+\includepdf[pages={306-307}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.3.3} Managing resources and improving throughput}
+\includepdf[pages={308-312}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.3.4} Stream objects}
+\includepdf[pages={313-313}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.3.5} Digital logic simulation}
+\includepdf[pages={314-319}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{4.4} Using the declarative concurrent model directly}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.4.1} Order-determining concurrency}
+\includepdf[pages={320-321}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.4.2} Coroutines}
+\includepdf[pages={322-323}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.4.3} Concurrent composition}
+\includepdf[pages={324-325}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{4.5} Lazy execution}
+\includepdf[pages={326-328}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.5.1} The demand-driven concurrent model}
+\includepdf[pages={329-332}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.5.2} Declarative computation models}
+\includepdf[pages={333-335}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.5.3} Lazy streams}
+\includepdf[pages={336-337}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.5.4} Bounded buffer}
+\includepdf[pages={338-339}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.5.5} Reading a file lazily}
+\includepdf[pages={340-340}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.5.6} The Hamming problem}
+\includepdf[pages={341-341}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.5.7} Lazy list operations}
+\includepdf[pages={342-345}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.5.8} Persistent queues and algorithm design}
+\includepdf[pages={346-349}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.5.9} List comprehensions}
+\includepdf[pages={350-351}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{4.6} Soft real-time programming}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.6.1} Basic operations}
+\includepdf[pages={352-353}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.6.2} Ticking}
+\includepdf[pages={354-356}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{4.7} Limitations and extensions of declarative programming}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.7.1} Efficiency}
+\includepdf[pages={357-357}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.7.2} Modularity}
+\includepdf[pages={358-361}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.7.3} Nondeterminism}
+\includepdf[pages={362-364}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.7.4} The real world}
+\includepdf[pages={365-365}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.7.5} Picking the right model}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.7.6} Extended models}
+\includepdf[pages={366-367}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.7.7} Using different models together}
+\includepdf[pages={368-369}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{4.8} The Haskell language}
+\includepdf[pages={370-370}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.8.1} Computation model}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.8.2} Lazy evaluation}
+\includepdf[pages={371-371}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.8.3} Currying}
+\includepdf[pages={372-372}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.8.4} Polymorphic types}
+\includepdf[pages={373-373}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.8.5} Type classes}
+\includepdf[pages={374-374}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{4.9} Advanced topics}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.9.1} The declarative concurrent model with exceptions}
+\includepdf[pages={375-376}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.9.2} More on lazy execution}
+\includepdf[pages={377-379}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.9.3} Dataflow variables as communication channels}
+\includepdf[pages={380-381}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.9.4} More on synchronization}
+\includepdf[pages={382-382}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{4.9.5} Usefulness of dataflow variables}
+\includepdf[pages={383-385}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{4.10} Historical notes}
+\includepdf[pages={386-386}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{4.11} Exercises}
+\includepdf[pages={387-395}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{5} Message-Passing Concurrency}
+\includepdf[pages={396-396}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{5.1} The message-passing concurrent model}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.1.1} Ports}
+\includepdf[pages={397-397}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.1.2} Semantics of ports}
+\includepdf[pages={398-399}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{5.2} Port objects}
+\includepdf[pages={400-400}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.2.1} The NewPortObject abstraction}
+\includepdf[pages={401-401}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.2.2} An example}
+\includepdf[pages={402-402}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.2.3} Reasoning with port objects}
+\includepdf[pages={403-403}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{5.3} Simple message protocols}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.3.1} RMI (Remote Method Invocation)}
+\includepdf[pages={404-406}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.3.2} Asynchronous RMI}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.3.3} RMI with callback (using thread)}
+\includepdf[pages={407-408}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.3.4} RMI with callback (using record continuation)}
+\includepdf[pages={409-409}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.3.5} RMI with callback (using procedure continuation)}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.3.6} Error reporting}
+\includepdf[pages={410-410}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.3.7} Asynchronous RMI with callback}
+\includepdf[pages={411-411}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.3.8} Double callbacks}
+\includepdf[pages={412-412}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{5.4} Program design for concurrency}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.4.1} Programming with concurrent components}
+\includepdf[pages={413-414}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.4.2} Design methodology}
+\includepdf[pages={415-415}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.4.3} List operations as concurrency patterns}
+\includepdf[pages={416-416}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.4.4} Lift control system}
+\includepdf[pages={417-425}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.4.5} Improvements to the lift control system}
+\includepdf[pages={426-427}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{5.5} Using the message-passing concurrent model directly}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.5.1} Port objects that share one thread}
+\includepdf[pages={428-429}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.5.2} A concurrent queue with ports}
+\includepdf[pages={430-432}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.5.3} A thread abstraction with termination detection}
+\includepdf[pages={433-435}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.5.4} Eliminating sequential dependencies}
+\includepdf[pages={436-436}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{5.6} The Erlang language}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.6.1} Computation model}
+\includepdf[pages={437-437}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.6.2} Introduction to Erlang programming}
+\includepdf[pages={438-440}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.6.3} The receive operation}
+\includepdf[pages={441-444}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{5.7} Advanced topics}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{5.7.1} The nondeterministic concurrent model}
+\includepdf[pages={445-449}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{5.8} Exercises}
+\includepdf[pages={450-455}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{6} Explicit State}
+\includepdf[pages={456-458}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{6.1} What is state?}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.1.1} Implicit (declarative) state}
+\includepdf[pages={459-459}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.1.2} Explicit state}
+\includepdf[pages={460-460}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{6.2} State and system building}
+\includepdf[pages={461-461}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.2.1} System properties}
+\includepdf[pages={462-462}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.2.2} Component-based programming}
+\includepdf[pages={463-463}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.2.3} Object-oriented programming}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{6.3} The declarative model with explicit state}
+\includepdf[pages={464-464}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.3.1} Cells}
+\includepdf[pages={465-466}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.3.2} Semantics of cells}
+\includepdf[pages={467-467}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.3.3} Relation to declarative programming}
+\includepdf[pages={468-468}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.3.4} Sharing and equality}
+\includepdf[pages={469-469}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{6.4} Abstract data types}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.4.1} Eight ways to organize ADTs}
+\includepdf[pages={470-471}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.4.2} Variations on a stack}
+\includepdf[pages={472-475}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.4.3} Revocable capabilities}
+\includepdf[pages={476-476}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.4.4} Parameter passing}
+\includepdf[pages={477-480}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{6.5} Stateful collections}
+\includepdf[pages={481-481}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.5.1} Indexed collections}
+\includepdf[pages={482-483}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.5.2} Choosing an indexed collection}
+\includepdf[pages={484-484}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.5.3} Other collections}
+\includepdf[pages={485-486}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{6.6} Reasoning with state}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.6.1} Invariant assertions}
+\includepdf[pages={487-487}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.6.2} An example}
+\includepdf[pages={488-490}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.6.3} Assertions}
+\includepdf[pages={491-491}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.6.4} Proof rules}
+\includepdf[pages={492-494}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.6.5} Normal termination}
+\includepdf[pages={495-495}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{6.7} Program design in the large}
+\includepdf[pages={496-496}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.7.1} Design methodology}
+\includepdf[pages={497-498}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.7.2} Hierarchical system structure}
+\includepdf[pages={499-503}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.7.3} Maintainability}
+\includepdf[pages={504-506}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.7.4} Future developments}
+\includepdf[pages={507-508}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.7.5} Further reading}
+\includepdf[pages={509-509}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{6.8} Case studies}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.8.1} Transitive closure}
+\includepdf[pages={510-517}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.8.2} Word frequencies (with stateful dictionary)}
+\includepdf[pages={518-518}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.8.3} Generating random numbers}
+\includepdf[pages={519-523}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.8.4} “Word of Mouth” simulation}
+\includepdf[pages={524-526}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{6.9} Advanced topics}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.9.1} Limitations of stateful programming}
+\includepdf[pages={527-527}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{6.9.2} Memory management and external references}
+\includepdf[pages={528-529}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{6.10} Exercises}
+\includepdf[pages={530-535}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{7} Object-Oriented Programming}
+\includepdf[pages={536-537}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{7.1} Motivations}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.1.1} Inheritance}
+\includepdf[pages={538-539}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.1.2} Encapsulated state and inheritance}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.1.3} Objects and classes}
+\includepdf[pages={540-540}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{7.2} Classes as complete ADTs}
+\includepdf[pages={541-541}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.2.1} An example}
+\includepdf[pages={542-542}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.2.2} Semantics of the example}
+\includepdf[pages={543-543}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.2.3} Defining classes}
+\includepdf[pages={544-545}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.2.4} Initializing attributes}
+\includepdf[pages={546-546}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.2.5} First-class messages}
+\includepdf[pages={547-549}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.2.6} First-class attributes}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.2.7} Programming techniques}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{7.3} Classes as incremental ADTs}
+\includepdf[pages={550-550}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.3.1} Inheritance}
+\includepdf[pages={551-553}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.3.2} Static and dynamic binding}
+\includepdf[pages={554-554}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.3.3} Controlling encapsulation}
+\includepdf[pages={555-559}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.3.4} Forwarding and delegation}
+\includepdf[pages={560-564}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.3.5} Reflection}
+\includepdf[pages={565-566}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{7.4} Programming with inheritance}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.4.1} The correct use of inheritance}
+\includepdf[pages={567-570}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.4.2} Constructing a hierarchy by following the type}
+\includepdf[pages={571-573}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.4.3} Generic classes}
+\includepdf[pages={574-575}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.4.4} Multiple inheritance}
+\includepdf[pages={576-581}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.4.5} Rules of thumb for multiple inheritance}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.4.6} The purpose of class diagrams}
+\includepdf[pages={582-582}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.4.7} Design patterns}
+\includepdf[pages={583-585}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{7.5} Relation to other computation models}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.5.1} Object-based and component-based programming}
+\includepdf[pages={586-586}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.5.2} Higher-order programming}
+\includepdf[pages={587-589}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.5.3} Functional decomposition versus type decomposition}
+\includepdf[pages={590-590}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.5.4} Should everything be an object?}
+\includepdf[pages={591-594}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{7.6} Implementing the object system}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.6.1} Abstraction diagram}
+\includepdf[pages={595-596}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.6.2} Implementing classes}
+\includepdf[pages={597-597}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.6.3} Implementing objects}
+\includepdf[pages={598-598}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.6.4} Implementing inheritance}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{7.7} The Java language (sequential part)}
+\includepdf[pages={599-599}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.7.1} Computation model}
+\includepdf[pages={600-600}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.7.2} Introduction to Java programming}
+\includepdf[pages={601-605}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{7.8} Active objects}
+\includepdf[pages={606-606}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.8.1} An example}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.8.2} The NewActive abstraction}
+\includepdf[pages={607-607}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.8.3} The Flavius Josephus problem}
+\includepdf[pages={608-610}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.8.4} Other active object abstractions}
+\includepdf[pages={611-611}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{7.8.5} Event manager with active objects}
+\includepdf[pages={612-616}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{7.9} Exercises}
+\includepdf[pages={617-619}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{8} Shared-State Concurrency}
+\includepdf[pages={620-623}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{8.1} The shared-state concurrent model}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{8.2} Programming with concurrency}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.2.1} Overview of the different approaches}
+\includepdf[pages={624-627}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.2.2} Using the shared-state model directly}
+\includepdf[pages={628-630}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.2.3} Programming with atomic actions}
+\includepdf[pages={631-631}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.2.4} Further reading}
+\includepdf[pages={632-632}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{8.3} Locks}
+\includepdf[pages={633-634}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.3.1} Building stateful concurrent ADTs}
+\includepdf[pages={635-636}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.3.2} Tuple spaces (“Linda”)}
+\includepdf[pages={637-641}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.3.3} Implementing locks}
+\includepdf[pages={642-642}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{8.4} Monitors}
+\includepdf[pages={643-644}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.4.1} Bounded buffer}
+\includepdf[pages={645-647}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.4.2} Programming with monitors}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.4.3} Implementing monitors}
+\includepdf[pages={648-649}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.4.4} Another semantics for monitors}
+\includepdf[pages={650-650}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{8.5} Transactions}
+\includepdf[pages={651-652}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.5.1} Concurrency control}
+\includepdf[pages={653-655}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.5.2} A simple transaction manager}
+\includepdf[pages={656-658}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.5.3} Transactions on cells}
+\includepdf[pages={659-661}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.5.4} Implementing transactions on cells}
+\includepdf[pages={662-665}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.5.5} More on transactions}
+\includepdf[pages={666-667}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{8.6} The Java language (concurrent part)}
+\includepdf[pages={668-668}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.6.1} Locks 626}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{8.6.2} Monitors 626}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{8.7} Exercises}
+\includepdf[pages={669-675}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{9} Relational Programming}
+\includepdf[pages={676-677}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{9.1} The relational computation model}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.1.1} The choice and fail statements}
+\includepdf[pages={678-678}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.1.2} Search tree}
+\includepdf[pages={679-679}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.1.3} Encapsulated search}
+\includepdf[pages={680-680}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.1.4} The Solve function}
+\includepdf[pages={681-681}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{9.2} Further examples}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.2.1} Numeric examples}
+\includepdf[pages={682-683}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.2.2} Puzzles and the n-queens problem}
+\includepdf[pages={684-686}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{9.3} Relation to logic programming}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.3.1} Logic and logic programming}
+\includepdf[pages={687-689}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.3.2} Operational and logical semantics}
+\includepdf[pages={690-692}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.3.3} Nondeterministic logic programming}
+\includepdf[pages={693-694}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.3.4} Relation to pure Prolog}
+\includepdf[pages={695-695}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.3.5} Logic programming in other models}
+\includepdf[pages={696-696}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{9.4} Natural language parsing}
+\includepdf[pages={697-697}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.4.1} A simple grammar}
+\includepdf[pages={698-698}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.4.2} Parsing with the grammar}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.4.3} Generating a parse tree}
+\includepdf[pages={699-699}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.4.4} Generating quantifiers}
+\includepdf[pages={700-702}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.4.5} Running the parser}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.4.6} Running the parser “backwards”}
+\includepdf[pages={703-703}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.4.7} Unification grammars}
+\includepdf[pages={704-704}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{9.5} A grammar interpreter}
+\includepdf[pages={705-705}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.5.1} A simple grammar}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.5.2} Encoding the grammar}
+\includepdf[pages={706-706}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.5.3} Running the grammar interpreter}
+\includepdf[pages={707-707}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.5.4} Implementing the grammar interpreter}
+\includepdf[pages={708-709}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{9.6} Databases}
+\includepdf[pages={710-710}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.6.1} Defining a relation}
+\includepdf[pages={711-711}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.6.2} Calculating with relations}
+\includepdf[pages={712-713}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.6.3} Implementing relations}
+\includepdf[pages={714-715}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{9.7} The Prolog language}
+\includepdf[pages={716-716}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.7.1} Computation model}
+\includepdf[pages={717-718}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.7.2} Introduction to Prolog programming}
+\includepdf[pages={719-723}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{9.7.3} Translating Prolog into a relational program}
+\includepdf[pages={724-726}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{9.8} Exercises}
+\includepdf[pages={727-729}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{part}{\protect\numberline{III} Specialized Computation Models}
+\includepdf[pages={730-731}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{10} Graphical User Interface Programming}
+\includepdf[pages={732-733}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{10.1} Basic concepts}
+\includepdf[pages={734-734}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{10.2} Using the declarative/procedural approach}
+\includepdf[pages={735-735}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{10.2.1} Basic user interface elements}
+\includepdf[pages={736-736}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{10.2.2} Building the graphical user interface}
+\includepdf[pages={737-738}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{10.2.3} Declarative geometry}
+\includepdf[pages={739-739}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{10.2.4} Declarative resize behavior}
+\includepdf[pages={740-740}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{10.2.5} Dynamic behavior of widgets}
+\includepdf[pages={741-741}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{10.3} Case studies}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{10.3.1} A simple progress monitor}
+\includepdf[pages={742-742}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{10.3.2} A simple calendar widget}
+\includepdf[pages={743-745}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{10.3.3} Automatic generation of a user interface}
+\includepdf[pages={746-749}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{10.3.4} A context-sensitive clock}
+\includepdf[pages={750-754}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{10.4} Implementing the GUI tool}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{10.5} Exercises}
+\includepdf[pages={755-755}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{11} Distributed Programming}
+\includepdf[pages={756-758}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{11.1} Taxonomy of distributed systems}
+\includepdf[pages={759-760}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{11.2} The distribution model}
+\includepdf[pages={761-762}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{11.3} Distribution of declarative data}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.3.1} Open distribution and global naming}
+\includepdf[pages={763-764}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.3.2} Sharing declarative data}
+\includepdf[pages={765-765}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.3.3} Ticket distribution}
+\includepdf[pages={766-767}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.3.4} Stream communication}
+\includepdf[pages={768-768}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{11.4} Distribution of state}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.4.1} Simple state sharing}
+\includepdf[pages={769-770}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.4.2} Distributed lexical scoping}
+\includepdf[pages={771-771}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{11.5} Network awareness}
+\includepdf[pages={772-772}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{11.6} Common distributed programming patterns}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.6.1} Stationary and mobile objects}
+\includepdf[pages={773-774}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.6.2} Asynchronous objects and dataflow}
+\includepdf[pages={775-776}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.6.3} Servers}
+\includepdf[pages={777-779}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.6.4} Closed distribution}
+\includepdf[pages={780-780}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{11.7} Distribution protocols}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.7.1} Language entities}
+\includepdf[pages={781-782}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.7.2} Mobile state protocol}
+\includepdf[pages={783-784}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.7.3} Distributed binding protocol}
+\includepdf[pages={785-785}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.7.4} Memory management}
+\includepdf[pages={786-786}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{11.8} Partial failure}
+\includepdf[pages={787-787}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.8.1} Fault model}
+\includepdf[pages={788-789}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.8.2} Simple cases of failure handling}
+\includepdf[pages={790-790}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.8.3} A resilient server}
+\includepdf[pages={791-791}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.8.4} Active fault tolerance}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{11.9} Security}
+\includepdf[pages={792-793}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{11.10} Building applications}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.10.1} Centralized first, distributed later}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.10.2} Handling partial failure}
+\includepdf[pages={794-794}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{11.10.3} Distributed components}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{11.11} Exercises}
+\includepdf[pages={795-797}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{12} Constraint Programming}
+\includepdf[pages={798-798}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{12.1} Propagate and search}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{12.1.1} Basic ideas}
+\includepdf[pages={799-799}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{12.1.2} Calculating with partial information}
+\includepdf[pages={800-800}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{12.1.3} An example}
+\includepdf[pages={801-802}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{12.1.4} Executing the example}
+\includepdf[pages={803-803}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{12.1.5} Summary}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{12.2} Programming techniques}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{12.2.1} A cryptarithmetic problem}
+\includepdf[pages={804-805}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{12.2.2} Palindrome products revisited}
+\includepdf[pages={806-806}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{12.3} The constraint-based computation model}
+\includepdf[pages={807-808}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{12.3.1} Basic constraints and propagators}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{12.4} Computation spaces}
+\includepdf[pages={809-809}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{12.4.1} Programming search with computation spaces}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{12.4.2} Definition}
+\includepdf[pages={810-819}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{12.5} Implementing the relational computation model}
+\includepdf[pages={820-820}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{12.5.1} The choice statement}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{12.5.2} Implementing the Solve function}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{12.6} Exercises}
+\includepdf[pages={821-823}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{part}{\protect\numberline{IV} Semantics}
+\includepdf[pages={824-825}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{13} Language Semantics}
+\includepdf[pages={826-826}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{13.1} The shared-state concurrent model}
+\includepdf[pages={827-827}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.1} The store}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.2} The single-assignment (constraint) store}
+\includepdf[pages={828-828}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.3} Abstract syntax}
+\includepdf[pages={829-829}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.4} Structural rules}
+\includepdf[pages={830-831}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.5} Sequential and concurrent execution}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.6} Comparison with the abstract machine semantics}
+\includepdf[pages={832-832}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.7} Variable introduction}
+\includepdf[pages={833-833}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.8} Imposing equality (tell)}
+\includepdf[pages={834-835}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.9} Conditional statements (ask)}
+\includepdf[pages={836-837}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.10} Names}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.11} Procedural abstraction}
+\includepdf[pages={838-839}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.12} Explicit state}
+\includepdf[pages={840-840}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.13} By-need triggers}
+\includepdf[pages={841-842}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.14} Read-only variables}
+\includepdf[pages={843-843}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.15} Exception handling}
+\includepdf[pages={844-846}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.16} Failed values}
+\includepdf[pages={847-847}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{13.1.17} Variable substitution}
+\includepdf[pages={848-848}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{13.2} Declarative concurrency}
+\includepdf[pages={849-850}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{13.3} Eight computation models}
+\includepdf[pages={851-851}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{13.4} Semantics of common abstractions}
+\includepdf[pages={852-852}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{13.5} Historical notes}
+\includepdf[pages={853-853}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{13.6} Exercises}
+\includepdf[pages={854-857}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{part}{\protect\numberline{V} Appendix}
+\includepdf[pages={858-859}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{A} Mozart System Development Environment}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{A.1} Interactive interface}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{A.1.1} Interface commands}
+\includepdf[pages={860-860}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{A.1.2} Using functors interactively}
+\includepdf[pages={861-861}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{A.2} Batch interface}
+\includepdf[pages={862-863}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{B} Basic Data Types}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{B.1} Numbers (integers, floats, and characters)}
+\includepdf[pages={864-865}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{B.1.1} Operations on numbers}
+\includepdf[pages={866-866}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{B.1.2} Operations on characters}
+\includepdf[pages={867-867}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{B.2} Literals (atoms and names)}
+\includepdf[pages={868-868}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{B.2.1} Operations on atoms}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{B.3} Records and tuples}
+\includepdf[pages={869-869}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{B.3.1} Tuples}
+\includepdf[pages={870-870}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{B.3.2} Operations on records}
+\includepdf[pages={871-871}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{B.3.3} Operations on tuples}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{B.4} Chunks (limited records)}
+\includepdf[pages={872-872}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{B.5} Lists}
+\includepdf[pages={873-873}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{B.5.1} Operations on lists}
+\includepdf[pages={874-874}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{B.6} Strings}
+\includepdf[pages={875-875}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{B.7} Virtual strings}
+\includepdf[pages={876-877}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{C} Language Syntax}
+\includepdf[pages={878-878}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{C.1} Interactive statements}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{C.2} Statements and expressions}
+\includepdf[pages={879-880}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{C.3} Nonterminals for statements and expressions}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{C.4} Operators}
+\includepdf[pages={881-883}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{C.4.1} Ternary operator}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{C.5} Keywords}
+\includepdf[pages={884-885}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{C.6} Lexical syntax}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{C.6.1} Tokens 843}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{C.6.2} Blank space and comments 843}
+\includepdf[pages={886-887}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{D} General Computation Model}
+\includepdf[pages={888-888}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{D.1} Creative extension principle}
+\includepdf[pages={889-889}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{D.2} Kernel language}
+\includepdf[pages={890-890}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{D.3} Concepts}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{D.3.1} Declarative models}
+\includepdf[pages={891-891}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{D.3.2} Security}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{D.3.3} Exceptions}
+\includepdf[pages={892-892}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{D.3.4} Explicit state}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{D.4} Different forms of state}
+\includepdf[pages={893-893}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{D.5} Other concepts}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{D.5.1} What’s next?}
+\clearpage\phantomsection
+\addcontentsline{toc}{subsection}{\protect\numberline{D.5.2} Domain-specific concepts}
+\includepdf[pages={894-894}]{ctm.pdf}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{D.6} Layered language design}
+\includepdf[pages={895-895}]{ctm.pdf}
+
+\clearpage\phantomsection
+\addcontentsline{toc}{part}{Bibliography}
+\includepdf[pages={896-911}]{ctm.pdf}
+
+\clearpage\phantomsection
+\addcontentsline{toc}{part}{Index}
+\includepdf[pages={912-939}]{ctm.pdf}
+\end{document}
